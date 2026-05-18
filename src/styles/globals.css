@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-pink: #F2C4CE;
+  --brand-pink-light: #FAE8EC;
+  --brand-pink-dark: #D4869A;
+  --brand-charcoal: #2C2C2C;
+  --brand-cream: #FAF7F5;
+  --brand-gold: #C9A96E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--brand-cream);
+  color: var(--brand-charcoal);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAE8EC;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-pink-dark);
+  border-radius: 3px;
+}
+
+/* Noise texture overlay for hero */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Elegant underline animation */
+.hover-underline {
+  position: relative;
+}
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--brand-charcoal);
+  transition: width 0.3s ease;
+}
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Product card hover */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(44, 44, 44, 0.12);
+}
+
+/* Shimmer loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #FAE8EC 25%, #F2C4CE 50%, #FAE8EC 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* WhatsApp float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Cart drawer */
+.cart-drawer {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cart-drawer.open {
+  transform: translateX(0);
+}
+.cart-drawer.closed {
+  transform: translateX(100%);
+}
+
+/* Backdrop */
+.backdrop {
+  transition: opacity 0.3s ease;
+}
+
+/* VA monogram */
+.va-monogram {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-brand-charcoal text-white font-sans font-medium tracking-wider uppercase text-sm px-8 py-3 transition-all duration-300 hover:bg-brand-charcoal-light hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply border border-brand-charcoal text-brand-charcoal font-sans font-medium tracking-wider uppercase text-sm px-8 py-3 transition-all duration-300 hover:bg-brand-charcoal hover:text-white;
+}
+
+.btn-pink {
+  @apply bg-brand-pink text-brand-charcoal font-sans font-medium tracking-wider uppercase text-sm px-8 py-3 transition-all duration-300 hover:bg-brand-pink-dark hover:text-white;
+}
+
+/* Section headings */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  color: #7A7A7A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Divider ornament */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brand-pink-dark), transparent);
+}
