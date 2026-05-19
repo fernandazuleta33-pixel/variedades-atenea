@@ -54,7 +54,7 @@ const allProducts = [
     price: 175000,
     original_price: null,
     image: 'https://chatgpt.com/backend-api/estuary/content?id=file_00000000520c71fb8ec8257ea1ca1170&ts=494212&p=fs&cid=1&sig=ccb3c3d4652570959e089612a28819c858e87a94f999575d09a3515c26b77ec0&v=0',
-    category: 'Bombay
+    category: 'Bombay ',
     rating: 4,
     reviews: 12,
     colors: ['#4A6FA5', '#2C4A7C', '#F2C4CE'],
