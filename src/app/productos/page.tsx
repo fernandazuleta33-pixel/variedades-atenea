@@ -25,7 +25,7 @@ const allProducts = [
     name: 'Persiana Vertical',
     price: 145000,
     original_price: null,
-    image: 'https://unsplash.com/es/fotos/un-primer-plano-de-una-ventana-cerrada-con-persianas-yo_VxFh0RsI',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpmNDQ1NjljNWI5NmM5YjcyOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyNGEzMDkwMzM2ODowMDA2NTIyMjg1MDdmOWVmEAIYAQ==',
     category: 'Verticales',
     rating: 4,
     reviews: 18,
