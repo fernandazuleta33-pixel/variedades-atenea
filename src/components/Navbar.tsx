@@ -60,13 +60,12 @@ export function Navbar() {
           <Link href="/" className="flex-1 flex justify-center md:flex-none md:absolute md:left-1/2 md:-translate-x-1/2">
             <div className="text-center">
               <div className="relative">
-                <span
-                  className="font-display text-3xl font-semibold text-brand-charcoal"
-                  style={{ fontFamily: 'Playfair Display, serif', letterSpacing: '-0.02em' }}
-                >
-                  Variedades Atenea
-                </span>
-              </div>
+  <img
+    src="/logo.png"
+    alt="Variedades Atenea"
+    className="h-12 w-auto object-contain"
+  />
+</div>
               <p
                 className="text-[9px] tracking-[0.35em] text-brand-charcoal/60 uppercase mt-0.5"
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
