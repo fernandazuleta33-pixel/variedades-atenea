@@ -6,20 +6,29 @@ import { ArrowRight } from 'lucide-react'
 const categories = [
   {
     id: 'roller',
-    name: 'Persianas Roller',
+    name: 'Enrollables',
     description: 'Elegancia minimalista con control total de la luz',
-    image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
+    image: 'https://chatgpt.com/backend-api/estuary/content?id=file_000000006d6471f5a8ba27ecede27c57&ts=494212&p=fs&cid=1&sig=6da24e8dbcdd1d4d016da74dba939595605a14e855fadb3fce9c73a675c16af4&v=0  ',  
     count: '12 productos',
     color: '#F2C4CE',
   },
   {
     id: 'venecianas',
-    name: 'Persianas Venecianas',
-    description: 'Clásico atemporal para cualquier ambiente',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
+    name: 'Persianas Verticales',
+    description: 'Versatilidad y estilo para cualquier espacio',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpmNDQ1NjljNWI5NmM5YjcyOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyNGEzMDkwMzM2ODowMDA2NTIyMjg1MDdmOWVmEAIYAQ==',
     count: '8 productos',
     color: '#E8D5B0',
   },
+  {
+    id: 'bombay',
+    name: 'Bombay',
+    description: 'Clásico atemporal para cualquier ambiente',
+    image: 'https://chatgpt.com/backend-api/estuary/content?id=file_00000000520c71fb8ec8257ea1ca1170&ts=494212&p=fs&cid=1&sig=ccb3c3d4652570959e089612a28819c858e87a94f999575d09a3515c26b77ec0&v=0',
+    count: '8 productos',
+    color: '#4A6FA5',
+  },
+  
   {
     id: 'panel',
     name: 'Panel Japonés',

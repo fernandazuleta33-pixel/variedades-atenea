@@ -11,7 +11,7 @@ const allProducts = [
     name: 'Enrollable en Blackout',
     price: 189000,
     original_price: 230000,
-    image: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
+    image: 'https://chatgpt.com/backend-api/estuary/content?id=file_000000006d6471f5a8ba27ecede27c57&ts=494212&p=fs&cid=1&sig=6da24e8dbcdd1d4d016da74dba939595605a14e855fadb3fce9c73a675c16af4&v=0  ',
     category: 'Enrollables',
     rating: 5,
     reviews: 24,
@@ -50,11 +50,11 @@ const allProducts = [
   },
   {
     id: 'roller-azul-001',
-    name: 'Roller Screen Solar Azul',
+    name: 'Bombay',
     price: 175000,
     original_price: null,
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80',
-    category: 'roller',
+    image: 'https://chatgpt.com/backend-api/estuary/content?id=file_00000000520c71fb8ec8257ea1ca1170&ts=494212&p=fs&cid=1&sig=ccb3c3d4652570959e089612a28819c858e87a94f999575d09a3515c26b77ec0&v=0',
+    category: 'Bombay
     rating: 4,
     reviews: 12,
     colors: ['#4A6FA5', '#2C4A7C', '#F2C4CE'],
