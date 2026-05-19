@@ -11,7 +11,7 @@ const allProducts = [
     name: 'Enrollable en Blackout',
     price: 189000,
     original_price: 230000,
-    image: 'https://chatgpt.com/backend-api/estuary/content?id=file_000000006d6471f5a8ba27ecede27c57&ts=494212&p=fs&cid=1&sig=6da24e8dbcdd1d4d016da74dba939595605a14e855fadb3fce9c73a675c16af4&v=0  ',
+    image: 'https://chatgpt.com/s/m_6a0be7d51e508191a09c98cc0809d520/content?id=file_000000006d6471f5a8ba27ecede27c57&ts=494212&p=fs&cid=1&sig=6da24e8dbcdd1d4d016da74dba939595605a14e855fadb3fce9c73a675c16af4&v=0', 
     category: 'Enrollables',
     rating: 5,
     reviews: 24,
