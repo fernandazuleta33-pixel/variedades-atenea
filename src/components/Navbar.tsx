@@ -63,8 +63,8 @@ export function Navbar() {
   <img
     src="/logo.png"
     alt="Variedades Atenea"
-    className="h-12 w-auto object-contain"
-  />
+    className="h-20 auto object-contain"
+  />20
 </div>
               <p
                 className="text-[9px] tracking-[0.35em] text-brand-charcoal/60 uppercase mt-0.5"

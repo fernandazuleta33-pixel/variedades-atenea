@@ -14,7 +14,7 @@ export function Footer() {
               <img
   src="/logo.png"
   alt="Variedades Atenea"
-  className="h-16 -auto object-contain brightness-0 invert"
+  className="h-16 w-auto object-contain brightness-0 invert"
 />
               <p
                 className="text-[10px] tracking-[0.3em] text-brand-pink uppercase"
